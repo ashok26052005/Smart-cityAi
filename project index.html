@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Recorded Video</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    video {
+      width: 85%;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      margin-bottom: 20px;
+    }
+    a.download-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #ff5722;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+    a.download-btn:hover {
+      background: #e64a19;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎥 My Recorded Video</h1>
+  <video controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <a class="download-btn" href="video.mp4" download>⬇ Download Video</a>
+</body>
+</html>
